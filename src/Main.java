@@ -92,5 +92,16 @@ public class Main {
             System.out.print(nums2[i] + ", ");
         }
         System.out.print("]");
+
+        /* Extra credit (commented out so it doesn't run at the same time as the other algorithms)
+        long[] thousandSequence = n.generateNotFibonacci(numTerms);
+        for(long num : thousandSequence) {
+            System.out.print(num + ", ");
+        }
+        The NotFibanoacci sequence grows exponentially, causing the numbers to eventually exceed the max value
+        of Java's long. It has a recurrence relation of: T(n) = (3 * T(n-1)) + (2 * (T(n-2)) and when n = 1000,
+        the numbers become very large, very fast and will cause overflow.
+        */
+
     }
 }
